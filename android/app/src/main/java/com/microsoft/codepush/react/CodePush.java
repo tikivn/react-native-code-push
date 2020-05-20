@@ -62,7 +62,7 @@ public class CodePush implements ReactPackage {
         mContext = context.getApplicationContext();
 
         mUpdateManager = new CodePushUpdateManager(
-            context.getFilesDir().getAbsolutePath() + "/" + deploymentKey.replaceAll("[^a-zA-Z0-9]", "_")
+            context.getFilesDir().getAbsolutePath() + "/" + deploymentKey
         );
         mTelemetryManager = new CodePushTelemetryManager(mContext);
         mDeploymentKey = deploymentKey;
